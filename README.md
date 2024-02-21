@@ -1,1 +1,0 @@
-# rhoai-llm-demos-gitops
