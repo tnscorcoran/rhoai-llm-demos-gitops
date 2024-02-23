@@ -4,12 +4,6 @@ kind: ClusterRole
 metadata:
   name: odh-cluster-role
 rules:
-  - apiGroups: [""]
-    resources: ["secrets", "services"]
-    verbs: ["*"]
-  - apiGroups: ["apps/deployments"]
-    resources: ["*"]
-    verbs: ["*"]
   - apiGroups: ["datasciencecluster.opendatahub.io"]
     resources: ["*"]
     verbs: ["*"]
@@ -18,6 +12,9 @@ rules:
     verbs: ["*"]
   - apiGroups: ["kubeflow.org"]
     resources: ["notebooks"]
+    verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["secrets", "services"]
     verbs: ["*"]
   - apiGroups: ["route.openshift.io"]
     resources: ["routes"]
