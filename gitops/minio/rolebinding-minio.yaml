@@ -1,13 +1,13 @@
----
-kind: ClusterRoleBinding
+kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: odh-cluster-role-binding
+ name: role-minio-binding
+ namespace: minio
 subjects:
-  - kind: ServiceAccount
-    name: openshift-gitops-argocd-application-controller
-    namespace: openshift-gitops
+- kind: ServiceAccount
+  name: minio-account
+  namespace: minio
 roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: odh-cluster-role
+ kind: Role
+ name: role-minio-account
+ apiGroup: rbac.authorization.k8s.io
