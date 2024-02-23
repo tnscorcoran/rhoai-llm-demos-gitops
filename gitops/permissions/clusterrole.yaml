@@ -13,3 +13,6 @@ rules:
   - apiGroups: ["kubeflow.org"]
     resources: ["notebooks"]
     verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["secrets"]
+    verbs: ["*"]
