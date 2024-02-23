@@ -16,6 +16,6 @@ rules:
   - apiGroups: [""]
     resources: ["secrets"]
     verbs: ["*"]
-  - apiGroups: ["route.openshift.io"]
+  - apiGroups: [""]
     resources: ["routes"]
     verbs: ["*"]
