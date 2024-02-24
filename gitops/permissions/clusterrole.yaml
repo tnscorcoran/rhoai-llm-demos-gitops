@@ -14,7 +14,7 @@ rules:
     resources: ["notebooks"]
     verbs: ["*"]
   - apiGroups: [""]
-    resources: ["secrets", "services"]
+    resources: ["secrets", "services", "deployments"]
     verbs: ["*"]
   - apiGroups: ["route.openshift.io"]
     resources: ["routes"]
