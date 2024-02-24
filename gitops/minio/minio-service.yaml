@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: minio-service
+  namespace: minio
 spec:
   ipFamilies:
     - IPv4
