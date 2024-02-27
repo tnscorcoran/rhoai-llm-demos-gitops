@@ -7,6 +7,8 @@ clusterGroup:
   - golang-external-secrets
   - redhat-ods-operator
   - openshift-pipelines
+  - openshift-nfd
+  -
 
   subscriptions:
     acm:
@@ -31,8 +33,15 @@ clusterGroup:
       channel: stable
       namespace: openshift-operators
       name: servicemeshoperator
-
-
+    nfd:
+      name: nfd
+      namespace: openshift-nfd
+      channel: stable
+    gpu:
+      name: gpu-operator-certified
+      namespace: nvidia-gpu-operator
+      channel: stable
+      source: certified-operators
 
   projects:
   - hub
