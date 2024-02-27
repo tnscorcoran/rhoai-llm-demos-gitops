@@ -16,7 +16,7 @@ clusterGroup:
     rhoai:
       name: rhods-operator
       channel: stable
-      namespace: redhat-ods-operator
+      namespace: openshift-operators
 
     openshift-pipelines:
       name: openshift-pipelines-operator-rh
