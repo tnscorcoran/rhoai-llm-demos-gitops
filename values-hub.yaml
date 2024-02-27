@@ -8,7 +8,6 @@ clusterGroup:
   - redhat-ods-operator
   - openshift-pipelines
   - openshift-nfd
-  -
 
   subscriptions:
     acm:
