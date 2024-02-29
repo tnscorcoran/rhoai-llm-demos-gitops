@@ -8,7 +8,7 @@ clusterGroup:
   - redhat-ods-operator
   - openshift-pipelines
   - openshift-nfd
-
+  - minio
   subscriptions:
     acm:
       name: advanced-cluster-management
@@ -87,7 +87,11 @@ clusterGroup:
       namespace: golang-external-secrets
       project: hub
       path: common/golang-external-secrets
-
+    minio:
+      name: minio
+      namespace: minio
+      project: hub
+      path: common/all/minio
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
