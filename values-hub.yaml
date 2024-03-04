@@ -9,6 +9,8 @@ clusterGroup:
   - openshift-pipelines
   - openshift-nfd
   - minio
+  - nvidia-gpu-operator
+  - openshift-serverless
   subscriptions:
     acm:
       name: advanced-cluster-management
