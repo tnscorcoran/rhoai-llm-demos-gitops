@@ -8,5 +8,5 @@ spec:
   resources:
     requests:
       storage: 150Gi  
-  storageClassName: gp2-csi
-#  volumeMode: Filesystem     # Swap this for storageClassName if not running on AWS.
+#  storageClassName: gp2-csi
+  volumeMode: Filesystem     # Swap this for storageClassName if not running on AWS.
